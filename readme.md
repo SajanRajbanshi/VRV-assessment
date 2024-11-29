@@ -93,6 +93,12 @@ It also requires body to have **username**, **password** and **role**.
 
 *Note:It will also return the token in the same way sing up does.*
 
+If fails to verify, it returns
+```
+// 404 error
+{ message: "user not found" }
+```
+
 
 #### "base-url/api/admin" (GET)
 This is a test endpoint to test the RBAC working. This endpoint will be only allowed to the users who are admin. If the user is admin, it will return
