@@ -3,6 +3,8 @@ const app=express();
 const connectToDbdb=require("./db");
 require("dotenv").config();
 const UserRouter=require("./Routes/User.routes");
+const cors=require("cors")
+app.use(cors());
 
 // connectiong to mongodb data base with function
 // so that connection to db can be delayed to time when needed to be connected
